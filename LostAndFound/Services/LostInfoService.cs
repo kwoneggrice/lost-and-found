@@ -1,10 +1,5 @@
 ﻿using LostAndFound.Interfaces;
 using LostAndFound.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LostAndFound.Services
 {
@@ -42,7 +37,7 @@ namespace LostAndFound.Services
 		/// </summary>
 		/// <param name="id">삭제할 행의 id</param>
 		/// <exception cref="InvalidOperationException"></exception>
-		public void Delete(long id)
+		public void Delete(long? id)
 		{
 			var data = _lostAndFoundContext.LostInfos.FirstOrDefault(x => x.Id == id);
 
@@ -72,7 +67,7 @@ namespace LostAndFound.Services
 		/// <param name="id">LostInfos 테이블에서 가져올 데이터의 id</param>
 		/// <returns></returns>
 		/// <exception cref="InvalidOperationException"></exception>
-		public LostInfo GetDetail(long id)
+		public LostInfo GetDetail(long? id)
 		{
 			var data = _lostAndFoundContext.LostInfos.FirstOrDefault(x => x.Id == id);
 
@@ -94,6 +89,11 @@ namespace LostAndFound.Services
 		{
 			_lostAndFoundContext.LostInfos.Update(entity);
 			_lostAndFoundContext.SaveChanges();
+		}
+
+		public List<LostInfo> GetAllByDateTime(DateTime dateTime)
+		{
+			return _lostAndFoundContext.LostInfos.Where(x => x.LostDate.Date == dateTime.Date).ToList();
 		}
 
 		#endregion
