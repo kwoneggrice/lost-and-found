@@ -56,3 +56,4 @@ https://github.com/kwoneggrice/lost-and-found/assets/73627446/547f361d-37c8-4a4c
 # 📄유스케이스 다이어그램
 
 # 💾 ERD
+![스크린샷 2024-03-12 235736](https://github.com/kwoneggrice/lost-and-found/assets/73627446/57873458-cf13-4575-9c95-d55edc8086b8)
