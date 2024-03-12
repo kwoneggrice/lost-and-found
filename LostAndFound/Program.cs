@@ -1,5 +1,10 @@
 using LostAndFound.Forms;
+using LostAndFound.Interfaces;
+using LostAndFound.Models;
+using LostAndFound.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Identity.Client;
 using System.ComponentModel.Design;
 
 namespace LostAndFound
@@ -17,6 +22,10 @@ namespace LostAndFound
 			ApplicationConfiguration.Initialize();
 
 			var services = new ServiceCollection();
+
+			services.AddDbContext<LostAndFoundContext>();
+
+			services.AddSingleton<IQuery<LostInfo>, LostInfoService>();
 
 			services.AddSingleton<FormLostAndFound>();
 
