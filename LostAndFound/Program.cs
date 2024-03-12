@@ -2,10 +2,7 @@ using LostAndFound.Forms;
 using LostAndFound.Interfaces;
 using LostAndFound.Models;
 using LostAndFound.Services;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Identity.Client;
-using System.ComponentModel.Design;
 
 namespace LostAndFound
 {
