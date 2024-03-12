@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace LostAndFound.Models
 {
+	/// <summary>
+	/// 데이터베이스 테이블과 매핑할 Entity
+	/// </summary>
 	public class LostInfo
 	{
 		[Key]
