@@ -4,6 +4,7 @@ using LostAndFound.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LostAndFound.Migrations
 {
     [DbContext(typeof(LostAndFoundContext))]
-    partial class LostAndFoundContextModelSnapshot : ModelSnapshot
+    [Migration("20240312072438_LostInfo Entity Update 2")]
+    partial class LostInfoEntityUpdate2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,7 +37,7 @@ namespace LostAndFound.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("FoundDate")
+                    b.Property<DateTime>("FoundDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("LostDate")
