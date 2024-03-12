@@ -12,29 +12,29 @@ namespace LostAndFound.Models
 		#region PROPERTIES
 
 		[Key]
-		[Column("id")]
+		[Column(name: "id")]
 		public long Id { get; set; }
 
 		[Required]
-		[Column("lost_item")]
+		[Column(name: "lost_item")]
 		public string? LostItem { get; set; }
 
 		[Required]
-		[Column("lost_location")]
+		[Column(name: "lost_location")]
 		public string? LostLocation { get; set; }
 
 		[Required]
-		[Column("acquirer_name")]
+		[Column(name: "acquirer_name")]
 		public string? AcquirerName { get; set; }
 
 		[Required]
-		[Column("lost_date")]
+		[Column(name: "lost_date")]
 		public DateTime LostDate { get; set; }
 
-		[Column("owner_name")]
+		[Column(name: "owner_name")]
 		public string? OwnerName { get; set; }
 
-		[Column("found_date")]
+		[Column(name: "found_date")]
 		public DateTime? FoundDate { get; set; }
 
 		#endregion
