@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace LostAndFound.Models
 {
@@ -12,6 +7,8 @@ namespace LostAndFound.Models
 	/// </summary>
 	public class LostInfo
 	{
+		#region PROPERTIES
+
 		[Key]
 		public long Id { get; set; }
 
@@ -19,11 +16,18 @@ namespace LostAndFound.Models
 		public string? LostItem { get; set; }
 
 		[Required]
-		public string? Location { get; set; }
+		public string? LostLocation { get; set; }
+
+		[Required]
+		public string? AcquirerName { get; set; }
 
 		[Required]
 		public DateTime LostDate { get; set; }
 
-		public DateTime FoundDate { get; set; }
+		public string? OwnerName { get; set; }
+
+		public DateTime? FoundDate { get; set; }
+
+		#endregion
 	}
 }
