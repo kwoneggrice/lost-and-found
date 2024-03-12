@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace LostAndFound.Models
 {
+	/// <summary>
+	/// Entity와 데이터베이스를 매핑하는 DBContext
+	/// </summary>
 	public class LostAndFoundContext : DbContext
 	{
 		#region PROPERTIES
