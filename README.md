@@ -50,7 +50,7 @@
 - Microsoft.EntityFrameworkCore.Tools
 - WinForms.DataVisualization
 
-# ▶ 동영상
+# 🎞️ 동영상
 https://github.com/kwoneggrice/lost-and-found/assets/73627446/547f361d-37c8-4a4c-ac6a-f79129bc5a5c
 
 # 📖 유스케이스 다이어그램
