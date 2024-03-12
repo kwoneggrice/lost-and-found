@@ -28,15 +28,15 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			tabControl1 = new TabControl();
 			tabPage1 = new TabPage();
 			tableLayoutPanel6 = new TableLayoutPanel();
@@ -149,54 +149,54 @@
 			// 
 			// pieChartByLostItem
 			// 
-			chartArea1.Name = "ChartArea1";
-			pieChartByLostItem.ChartAreas.Add(chartArea1);
+			chartArea4.Name = "ChartArea1";
+			pieChartByLostItem.ChartAreas.Add(chartArea4);
 			pieChartByLostItem.Dock = DockStyle.Fill;
-			legend1.Name = "Legend1";
-			pieChartByLostItem.Legends.Add(legend1);
+			legend4.Name = "Legend1";
+			pieChartByLostItem.Legends.Add(legend4);
 			pieChartByLostItem.Location = new Point(8, 8);
 			pieChartByLostItem.Margin = new Padding(8);
 			pieChartByLostItem.Name = "pieChartByLostItem";
-			series1.ChartArea = "ChartArea1";
-			series1.Legend = "Legend1";
-			series1.Name = "Series1";
-			pieChartByLostItem.Series.Add(series1);
+			series4.ChartArea = "ChartArea1";
+			series4.Legend = "Legend1";
+			series4.Name = "Series1";
+			pieChartByLostItem.Series.Add(series4);
 			pieChartByLostItem.Size = new Size(305, 435);
 			pieChartByLostItem.TabIndex = 0;
 			pieChartByLostItem.Text = "chart1";
 			// 
 			// pieChartByLocation
 			// 
-			chartArea2.Name = "ChartArea1";
-			pieChartByLocation.ChartAreas.Add(chartArea2);
+			chartArea5.Name = "ChartArea1";
+			pieChartByLocation.ChartAreas.Add(chartArea5);
 			pieChartByLocation.Dock = DockStyle.Fill;
-			legend2.Name = "Legend1";
-			pieChartByLocation.Legends.Add(legend2);
+			legend5.Name = "Legend1";
+			pieChartByLocation.Legends.Add(legend5);
 			pieChartByLocation.Location = new Point(329, 8);
 			pieChartByLocation.Margin = new Padding(8);
 			pieChartByLocation.Name = "pieChartByLocation";
-			series2.ChartArea = "ChartArea1";
-			series2.Legend = "Legend1";
-			series2.Name = "Series1";
-			pieChartByLocation.Series.Add(series2);
+			series5.ChartArea = "ChartArea1";
+			series5.Legend = "Legend1";
+			series5.Name = "Series1";
+			pieChartByLocation.Series.Add(series5);
 			pieChartByLocation.Size = new Size(305, 435);
 			pieChartByLocation.TabIndex = 1;
 			pieChartByLocation.Text = "chart2";
 			// 
 			// pieChartByFoundOrNot
 			// 
-			chartArea3.Name = "ChartArea1";
-			pieChartByFoundOrNot.ChartAreas.Add(chartArea3);
+			chartArea6.Name = "ChartArea1";
+			pieChartByFoundOrNot.ChartAreas.Add(chartArea6);
 			pieChartByFoundOrNot.Dock = DockStyle.Fill;
-			legend3.Name = "Legend1";
-			pieChartByFoundOrNot.Legends.Add(legend3);
+			legend6.Name = "Legend1";
+			pieChartByFoundOrNot.Legends.Add(legend6);
 			pieChartByFoundOrNot.Location = new Point(650, 8);
 			pieChartByFoundOrNot.Margin = new Padding(8);
 			pieChartByFoundOrNot.Name = "pieChartByFoundOrNot";
-			series3.ChartArea = "ChartArea1";
-			series3.Legend = "Legend1";
-			series3.Name = "Series1";
-			pieChartByFoundOrNot.Series.Add(series3);
+			series6.ChartArea = "ChartArea1";
+			series6.Legend = "Legend1";
+			series6.Name = "Series1";
+			pieChartByFoundOrNot.Series.Add(series6);
 			pieChartByFoundOrNot.Size = new Size(308, 435);
 			pieChartByFoundOrNot.TabIndex = 2;
 			pieChartByFoundOrNot.Text = "chart3";
@@ -373,10 +373,11 @@
 			label1.Name = "label1";
 			label1.Size = new Size(59, 15);
 			label1.TabIndex = 4;
-			label1.Text = "습득 시간";
+			label1.Text = "습득 날짜";
 			// 
 			// dtpLostDate
 			// 
+			dtpLostDate.CustomFormat = "";
 			dtpLostDate.Dock = DockStyle.Fill;
 			dtpLostDate.Location = new Point(6, 272);
 			dtpLostDate.Margin = new Padding(6);

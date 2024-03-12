@@ -64,7 +64,7 @@ namespace LostAndFound.Forms
 			tbLostItem.Text = "";
 			tbOwnerName.Text = "";
 			cbLostLocation.SelectedIndex = -1;
-			dtpLostDate.Value = DateTime.Today;
+			dtpLostDate.Value = DateTime.Today.Date;
 		}
 
 		/// <summary>
@@ -237,7 +237,7 @@ namespace LostAndFound.Forms
 					string lostItem = tbLostItem.Text;
 					string lostLocation = cbLostLocation.Text;
 					string acquirerName = tbAcquirerName.Text;
-					DateTime lostDate = dtpLostDate.Value;
+					DateTime lostDate = dtpLostDate.Value.Date;
 
 					LostInfo entity = new()
 					{
@@ -279,7 +279,7 @@ namespace LostAndFound.Forms
 					data.LostItem = tbLostItem.Text;
 					data.LostLocation = cbLostLocation.Text;
 					data.AcquirerName = tbAcquirerName.Text;
-					data.LostDate = dtpLostDate.Value;
+					data.LostDate = dtpLostDate.Value.Date;
 					data.OwnerName = tbOwnerName.Text;
 
 					_iQuery.Update(data);
@@ -335,9 +335,9 @@ namespace LostAndFound.Forms
 						data.LostItem = tbLostItem.Text;
 						data.LostLocation = cbLostLocation.Text;
 						data.AcquirerName = tbAcquirerName.Text;
-						data.LostDate = dtpLostDate.Value;
+						data.LostDate = dtpLostDate.Value.Date;
 						data.OwnerName = tbOwnerName.Text;
-						data.FoundDate = DateTime.Now;
+						data.FoundDate = DateTime.Now.Date;
 
 						_iQuery.Update(data);
 
