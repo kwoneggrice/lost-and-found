@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LostAndFound.Interfaces
+﻿namespace LostAndFound.Interfaces
 {
 	public interface IQuery<T>
 	{
@@ -21,7 +15,7 @@ namespace LostAndFound.Interfaces
 		/// </summary>
 		/// <param name="id">조회할 행의 id</param>
 		/// <returns></returns>
-		T GetDetail(long id);
+		T GetDetail(long? id);
 
 		/// <summary>
 		/// 데이터베이스 테이블의 행 삽입
@@ -39,7 +33,14 @@ namespace LostAndFound.Interfaces
 		/// 데이터베이스 테이블의 행 삭제
 		/// </summary>
 		/// <param name="id">삭제할 행의 id</param>
-		void Delete(long id);
+		void Delete(long? id);
+
+		/// <summary>
+		/// 데이터베이스 테이블에서 특정 날짜 데이터 조회
+		/// </summary>
+		/// <param name="dateTime">조회할 날짜</param>
+		/// <returns></returns>
+		List<T> GetAllByDateTime(DateTime dateTime);
 
 		#endregion
 	}
