@@ -3,7 +3,7 @@ using LostAndFound.Models;
 
 namespace LostAndFound.Services
 {
-	public class LostInfoService : IQuery<LostInfo>
+	public class LostInfoService : ILostInfoService<LostInfo>
 	{
 		#region FIELDS
 
