@@ -8,14 +8,14 @@ namespace LostAndFound.Forms
 	{
 		#region FIELDS
 
-		private readonly IQuery<LostInfo> _iQuery;
+		private readonly ILostInfoService<LostInfo> _iQuery;
 		private readonly LostAndFoundContext _lostAndFoundContext;
 
 		#endregion
 
 		#region CONSTRUCT
 
-		public FormLostAndFound(IQuery<LostInfo> iQuery, LostAndFoundContext lostAndFoundContext)
+		public FormLostAndFound(ILostInfoService<LostInfo> iQuery, LostAndFoundContext lostAndFoundContext)
 		{
 			InitializeComponent();
 
