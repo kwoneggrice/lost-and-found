@@ -1,6 +1,6 @@
 ﻿namespace LostAndFound.Interfaces
 {
-	public interface IQuery<T>
+	public interface ILostInfoService<T>
 	{
 		#region METHODS
 
