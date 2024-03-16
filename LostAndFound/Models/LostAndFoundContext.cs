@@ -10,6 +10,7 @@ namespace LostAndFound.Models
 		#region PROPERTIES
 
 		public DbSet<LostInfo> LostInfos { get; set; }
+		public DbSet<User> Users { get; set; }
 
 		#endregion
 
