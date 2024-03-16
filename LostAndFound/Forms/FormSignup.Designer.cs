@@ -29,13 +29,13 @@
 		private void InitializeComponent()
 		{
 			tableLayoutPanel1 = new TableLayoutPanel();
+			tbPassword = new TextBox();
 			label1 = new Label();
 			label2 = new Label();
 			label3 = new Label();
-			btnSignup = new Button();
-			btnCancle = new Button();
 			tbUserId = new TextBox();
-			tbPassword = new TextBox();
+			btnCancle = new Button();
+			btnSignup = new Button();
 			tbCompanyCode = new TextBox();
 			tableLayoutPanel1.SuspendLayout();
 			SuspendLayout();
@@ -67,7 +67,16 @@
 			tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
 			tableLayoutPanel1.Size = new Size(341, 415);
 			tableLayoutPanel1.TabIndex = 0;
-			tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
+			// 
+			// tbPassword
+			// 
+			tbPassword.Dock = DockStyle.Fill;
+			tbPassword.Location = new Point(10, 163);
+			tbPassword.Margin = new Padding(10);
+			tbPassword.Name = "tbPassword";
+			tbPassword.PasswordChar = '*';
+			tbPassword.Size = new Size(321, 23);
+			tbPassword.TabIndex = 6;
 			// 
 			// label1
 			// 
@@ -102,16 +111,15 @@
 			label3.TabIndex = 2;
 			label3.Text = "기업코드";
 			// 
-			// btnSignup
+			// tbUserId
 			// 
-			btnSignup.Dock = DockStyle.Fill;
-			btnSignup.Location = new Point(10, 316);
-			btnSignup.Margin = new Padding(10);
-			btnSignup.Name = "btnSignup";
-			btnSignup.Size = new Size(321, 31);
-			btnSignup.TabIndex = 3;
-			btnSignup.Text = "회원가입";
-			btnSignup.UseVisualStyleBackColor = true;
+			tbUserId.BackColor = Color.AliceBlue;
+			tbUserId.Dock = DockStyle.Fill;
+			tbUserId.Location = new Point(10, 61);
+			tbUserId.Margin = new Padding(10);
+			tbUserId.Name = "tbUserId";
+			tbUserId.Size = new Size(321, 23);
+			tbUserId.TabIndex = 5;
 			// 
 			// btnCancle
 			// 
@@ -123,25 +131,19 @@
 			btnCancle.TabIndex = 4;
 			btnCancle.Text = "취소";
 			btnCancle.UseVisualStyleBackColor = true;
+			btnCancle.Click += btnCancle_Click;
 			// 
-			// tbUserId
+			// btnSignup
 			// 
-			tbUserId.BackColor = Color.AliceBlue;
-			tbUserId.Dock = DockStyle.Fill;
-			tbUserId.Location = new Point(10, 61);
-			tbUserId.Margin = new Padding(10);
-			tbUserId.Name = "tbUserId";
-			tbUserId.Size = new Size(321, 23);
-			tbUserId.TabIndex = 5;
-			// 
-			// tbPassword
-			// 
-			tbPassword.Dock = DockStyle.Fill;
-			tbPassword.Location = new Point(10, 163);
-			tbPassword.Margin = new Padding(10);
-			tbPassword.Name = "tbPassword";
-			tbPassword.Size = new Size(321, 23);
-			tbPassword.TabIndex = 6;
+			btnSignup.Dock = DockStyle.Fill;
+			btnSignup.Location = new Point(10, 316);
+			btnSignup.Margin = new Padding(10);
+			btnSignup.Name = "btnSignup";
+			btnSignup.Size = new Size(321, 31);
+			btnSignup.TabIndex = 3;
+			btnSignup.Text = "회원가입";
+			btnSignup.UseVisualStyleBackColor = true;
+			btnSignup.Click += btnSignup_Click;
 			// 
 			// tbCompanyCode
 			// 
