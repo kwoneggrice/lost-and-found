@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace LostAndFound.Utils
 {
 	public class PasswordUtil
 	{
+		#region METHODS
+
 		public static string HasingPassword(string password)
 		{
 			using (SHA256 hash = SHA256.Create())
@@ -16,7 +14,6 @@ namespace LostAndFound.Utils
 				StringBuilder sb = new StringBuilder();
 
 				byte[] bytes = hash.ComputeHash(Encoding.UTF8.GetBytes(password));
-
 
 				for (int i = 0; i < bytes.Length; i++)
 				{
@@ -26,5 +23,7 @@ namespace LostAndFound.Utils
 				return sb.ToString();
 			}
 		}
+
+		#endregion
 	}
 }
