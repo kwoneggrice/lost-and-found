@@ -52,6 +52,7 @@ namespace LostAndFound.Forms
 						};
 
 						_userService.CreateUser(user);
+						Close();
 					}
 					else
 					{
