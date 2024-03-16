@@ -6,31 +6,42 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace LostAndFound
 {
-	internal static class Program
+	public static class Program
 	{
-		/// <summary>
-		///  The main entry point for the application.
-		/// </summary>
+		#region PROPERTIES
+
+		public static bool IsLogin { get; set; }
+
+		#endregion
+
 		[STAThread]
 		static void Main()
 		{
-			// To customize application configuration such as set high DPI settings or default font,
-			// see https://aka.ms/applicationconfiguration.
 			ApplicationConfiguration.Initialize();
 
 			var services = new ServiceCollection();
 
 			services.AddDbContext<LostAndFoundContext>();
 
-			services.AddSingleton<IQuery<LostInfo>, LostInfoService>();
+			services.AddSingleton<ILostInfoService<LostInfo>, LostInfoService>();
+			services.AddSingleton<IUserService<User>, UserService>();
 
 			services.AddSingleton<FormLostAndFound>();
+			services.AddSingleton<FormLogin>();
+			services.AddSingleton<FormSignup>();
 
 			using var serviceProvider = services.BuildServiceProvider();
 
 			var formLostAndFound = serviceProvider.GetRequiredService<FormLostAndFound>();
+			var formLogin = serviceProvider.GetRequiredService<FormLogin>();
+			var formSignup = serviceProvider.GetRequiredService<FormSignup>();
 
-			Application.Run(formLostAndFound);
+			Application.Run(formLogin);
+
+			if (IsLogin == true)
+			{
+				Application.Run(formLostAndFound);
+			}
 		}
 	}
 }
