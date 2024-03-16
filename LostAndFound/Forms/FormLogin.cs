@@ -1,14 +1,6 @@
-﻿using LostAndFound.Services;
+﻿using LostAndFound.Interfaces;
+using LostAndFound.Models;
 using LostAndFound.Utils;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace LostAndFound.Forms
 {
@@ -17,13 +9,13 @@ namespace LostAndFound.Forms
 		#region FIELDS
 
 		private readonly FormSignup _formSignup;
-		private readonly UserService _userService;
+		private readonly IUserService<User> _userService;
 
 		#endregion
 
 		#region CONSTRUCTOR
 
-		public FormLogin(FormSignup formSignup, UserService userService)
+		public FormLogin(FormSignup formSignup, IUserService<User> userService)
 		{
 			InitializeComponent();
 			_formSignup = formSignup;
@@ -34,6 +26,11 @@ namespace LostAndFound.Forms
 
 		#region EVENTS
 
+		/// <summary>
+		/// 로그인 폼에서 로그인 버튼 눌렀을 때 이벤트 로직
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnLogin_Click(object sender, EventArgs e)
 		{
 			string userId = tbUserId.Text;
@@ -69,6 +66,11 @@ namespace LostAndFound.Forms
 			}
 		}
 
+		/// <summary>
+		/// 로그인 폼에서 회원가입 버튼 눌렀을 때 이벤트 로직
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnSignup_Click(object sender, EventArgs e)
 		{
 			_formSignup.ShowDialog();
