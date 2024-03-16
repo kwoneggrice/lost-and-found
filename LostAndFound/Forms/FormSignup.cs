@@ -1,15 +1,6 @@
-﻿using LostAndFound.Models;
-using LostAndFound.Services;
+﻿using LostAndFound.Interfaces;
+using LostAndFound.Models;
 using LostAndFound.Utils;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace LostAndFound.Forms
 {
@@ -19,14 +10,13 @@ namespace LostAndFound.Forms
 		#region FIELDS
 
 		private const string COMPANY_CODE = "ADMIN";
-		private readonly UserService _userService;
+		private readonly IUserService<User> _userService;
 
 		#endregion
 
-
 		#region CONSTRUCTOR
 
-		public FormSignup(UserService userService)
+		public FormSignup(IUserService<User> userService)
 		{
 			InitializeComponent();
 			_userService = userService;
@@ -36,6 +26,11 @@ namespace LostAndFound.Forms
 
 		#region EVENTS
 
+		/// <summary>
+		/// 회원가입 폼에서 회원가입 버튼을 눌렀을 때 이벤트 로직
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnSignup_Click(object sender, EventArgs e)
 		{
 			if (!string.IsNullOrWhiteSpace(tbUserId.Text) && !string.IsNullOrWhiteSpace(tbPassword.Text)
@@ -56,7 +51,7 @@ namespace LostAndFound.Forms
 							Password = password
 						};
 
-						_userService.Signup(user);
+						_userService.CreateUser(user);
 					}
 					else
 					{
@@ -74,11 +69,16 @@ namespace LostAndFound.Forms
 			}
 		}
 
-		#endregion
-
+		/// <summary>
+		/// 회원가입 폼에서 취소 버튼 눌렀을 때 이벤트 로직
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnCancle_Click(object sender, EventArgs e)
 		{
 			Close();
 		}
+
+		#endregion
 	}
 }
