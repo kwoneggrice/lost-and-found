@@ -62,4 +62,8 @@
 ![스크린샷 2024-03-16 185052](https://github.com/kwoneggrice/lost-and-found/assets/73627446/312a9929-9a9f-4df1-ba0c-db72a8016d3d)
 
 # 🎞️ 동영상
+### 로그인 폼
+https://github.com/kwoneggrice/lost-and-found/assets/73627446/d2603ad5-6447-4d4c-8906-1810396e1820
+
+### 메인 폼
 https://github.com/kwoneggrice/lost-and-found/assets/73627446/547f361d-37c8-4a4c-ac6a-f79129bc5a5c
