@@ -2,6 +2,14 @@
 - 용인시 수지구에서 발생한 분실물을 관리하는 프로그램
 
 # 🔧 구현 기능
+☑ 회원가입 기능
+- `ID`, `Password`, `기업코드`를 입력해 회원가입이 가능합니다.
+  - 기업코드가 일치하지 않으면 회원가입이 불가능합니다.
+
+☑ 로그인 기능
+- `ID`, `Password`를 입력해 로그인이 가능합니다.
+  - 로그인 성공시 `수지구 분실물 센터` 메인 폼으로 이동할 수 있습니다.
+
 ☑ 전체 분실물 조회 기능
 - 등록된 모든 분실물을 조회할 수 있습니다.
 
@@ -50,11 +58,8 @@
 - Microsoft.EntityFrameworkCore.Tools
 - WinForms.DataVisualization
 
+# 💾 ERD
+![스크린샷 2024-03-16 185052](https://github.com/kwoneggrice/lost-and-found/assets/73627446/312a9929-9a9f-4df1-ba0c-db72a8016d3d)
+
 # 🎞️ 동영상
 https://github.com/kwoneggrice/lost-and-found/assets/73627446/547f361d-37c8-4a4c-ac6a-f79129bc5a5c
-
-# 📖 유스케이스 다이어그램
-![스크린샷 2024-03-13 000610](https://github.com/kwoneggrice/lost-and-found/assets/73627446/8bf300ca-1da0-4584-aa7b-93501915c5b8)
-
-# 💾 ERD
-![스크린샷 2024-03-12 235736](https://github.com/kwoneggrice/lost-and-found/assets/73627446/57873458-cf13-4575-9c95-d55edc8086b8)
