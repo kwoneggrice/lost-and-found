@@ -85,6 +85,7 @@
 			tbPassword.Location = new Point(10, 232);
 			tbPassword.Margin = new Padding(10);
 			tbPassword.Name = "tbPassword";
+			tbPassword.PasswordChar = '*';
 			tbPassword.Size = new Size(278, 23);
 			tbPassword.TabIndex = 5;
 			// 
@@ -98,6 +99,7 @@
 			btnLogin.TabIndex = 0;
 			btnLogin.Text = "로그인";
 			btnLogin.UseVisualStyleBackColor = true;
+			btnLogin.Click += btnLogin_Click;
 			// 
 			// btnSignup
 			// 
@@ -147,11 +149,11 @@
 			label3.Anchor = AnchorStyles.None;
 			label3.AutoSize = true;
 			label3.Font = new Font("맑은 고딕", 20F);
-			label3.Location = new Point(167, 206);
+			label3.Location = new Point(122, 206);
 			label3.Name = "label3";
-			label3.Size = new Size(161, 37);
+			label3.Size = new Size(251, 37);
 			label3.TabIndex = 1;
-			label3.Text = "기업 이미지";
+			label3.Text = "수지구 분실물 센터";
 			// 
 			// FormLogin
 			// 
