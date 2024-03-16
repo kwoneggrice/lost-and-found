@@ -57,4 +57,4 @@ https://github.com/kwoneggrice/lost-and-found/assets/73627446/547f361d-37c8-4a4c
 ![스크린샷 2024-03-13 000610](https://github.com/kwoneggrice/lost-and-found/assets/73627446/8bf300ca-1da0-4584-aa7b-93501915c5b8)
 
 # 💾 ERD
-![스크린샷 2024-03-12 235736](https://github.com/kwoneggrice/lost-and-found/assets/73627446/57873458-cf13-4575-9c95-d55edc8086b8)
+![스크린샷 2024-03-16 185052](https://github.com/kwoneggrice/lost-and-found/assets/73627446/312a9929-9a9f-4df1-ba0c-db72a8016d3d)
